@@ -1,0 +1,91 @@
+// Arrays
+// a = 0 The Array always starts with a 0, instead of a 1.
+// b = 1
+// c = 2
+// d = 3
+// e = 4
+// f = 5
+
+// var customerName = [];
+// customerName.push('Sam Smith'); <- This is represented as 0.
+// customerName.push('Tommy Guns'); <- This is represented as 1.
+// ----------------------------------------------------------------------------------------------------------------------------------------
+// for (let i = 0; i < customerNames.length; i++) { <- The for loop helps us represent and execute all names with out making multiple console.logs
+
+// console.log(customerNames[0]); <- To reference the names we add the number within square brackets.
+// }
+// ----------------------------------------------------------------------------------------------------------------------------------------
+// for (name of customerNames) {
+//     console.log(name);     <- this for of loop shortens the code and gets rid of the (i).
+// }
+----------------------------------------------------------------------------------------------------------------------------------------
+
+// ar firstName = "Mary";
+// var lastName = "Brown";
+// var assignmentOne = 100;
+// var assignmentTwo = 79;
+// var assignmentThree = 80;
+// var assignmentFour = 90;
+// var assignmentFive = 100;
+
+// console.log("Student: " + firstName + " " + lastName);
+// console.log("Grades:");
+// console.log("1: " + assignmentOne);
+// console.log("2: " + assignmentTwo);
+// console.log("3: " + assignmentThree);
+// console.log("4: " + assignmentFour);
+// console.log("5: " + assignmentFive);
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+// Grade Book Array Example:
+
+
+// 1. Let's simplify the Grade Book Example now by using an array, and a for loop to print the grades:
+
+// let fullName = "Mary" + " " + "Brown";
+// let gradesArray = [100, 79, 80, 90, 100];
+
+// console.log("\n\nStudent: " + fullName);
+// console.log("Grades: ");
+// for (let i = 0; i < 5; i++) {
+// console.log((i+1) + ": " + gradesArray[i]);
+// }
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+// 2. Check out this rewrite of our Grade Book Array Example, using an enhanced for loop to print the grades:
+
+// let fullName = "Mary" + " " + "Brown";
+// let gradesArray = [100, 79, 80, 90, 100];
+// let counter = 1;
+
+// console.log("\n\nStudent: " + fullName);
+// console.log("Grades: ");
+// for (let grade of gradesArray) {
+// console.log((counter++) + ": " + grade);
+// }
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+// 3. Arrays in JavaScript can have elements added to them.   Here we add one more grade to an array by using arrayName.push()   Check out one more Grade Book Array Example rewrite:
+
+// let fullName = "Mary" + " " + "Brown";
+// let gradesArray = [100, 79, 80, 90, 100];
+// let counter = 1;
+
+// console.log("\n\nStudent: " + fullName);
+// console.log("Grades: ");
+// for (let grade of gradesArray) {
+// console.log((counter++) + ": " + grade);
+// }
+
+// // Now Add Another Grade
+// gradesArray.push(85);
+// // Reset the counter to 1;
+// counter = 1;
+// console.log("\n\nStudent: " + fullName);
+// console.log("Grades: ");
+// for (let grade of gradesArray) {
+// console.log((counter++) + ": " + grade);
+// }
